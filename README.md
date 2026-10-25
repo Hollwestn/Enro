@@ -14,6 +14,7 @@
 
 [Что скачать](docs/DOWNLOADS.md) · [Первый запуск](START_HERE.md) · [Руководство](USER_GUIDE.md) · [Все сборки](https://github.com/Hollwestn/Enro/releases)
 
+[![Windows build](https://github.com/Hollwestn/Enro/actions/workflows/build.yml/badge.svg)](https://github.com/Hollwestn/Enro/actions/workflows/build.yml)
 ![Windows x64](https://img.shields.io/badge/Windows-10%20%2F%2011%20x64-A595FF?style=flat-square&labelColor=161923)
 ![Java 25](https://img.shields.io/badge/Java-25-A595FF?style=flat-square&labelColor=161923)
 ![JavaFX](https://img.shields.io/badge/JavaFX-25.0.2-A595FF?style=flat-square&labelColor=161923)
@@ -117,7 +118,7 @@ cd Enro
 
 ## Документация
 
-[Начать здесь](START_HERE.md) · [Установка](INSTALLATION.md) · [Работа с файлами](USER_GUIDE.md) · [Безопасность](SAFETY_GUIDE.md) · [Решение проблем](TROUBLESHOOTING.md) · [Архитектура](docs/ARCHITECTURE.md) · [Дизайн](docs/DESIGN_SYSTEM.md) · [Участие](CONTRIBUTING.md) · [Сторонние компоненты](THIRD_PARTY_NOTICES.md)
+[Начать здесь](START_HERE.md) · [Установка](INSTALLATION.md) · [Работа с файлами](USER_GUIDE.md) · [Безопасность](SAFETY_GUIDE.md) · [Решение проблем](TROUBLESHOOTING.md) · [Архитектура](docs/ARCHITECTURE.md) · [Дизайн](docs/DESIGN_SYSTEM.md) · [Участие](CONTRIBUTING.md) · [История версий](CHANGELOG.md) · [Сторонние компоненты](THIRD_PARTY_NOTICES.md)
 
 ---
 
