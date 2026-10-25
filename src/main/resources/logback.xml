@@ -1,0 +1,5 @@
+<configuration>
+ <property name="LOG_HOME" value="${enro.home:-.smoke}/logs"/>
+ <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender"><file>${LOG_HOME}/enro.log</file><rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy"><fileNamePattern>${LOG_HOME}/enro.%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern><maxFileSize>2MB</maxFileSize><maxHistory>14</maxHistory><totalSizeCap>30MB</totalSizeCap></rollingPolicy><encoder><pattern>%d{ISO8601} %-5level %logger{30} - %msg%n</pattern></encoder></appender>
+ <root level="INFO"><appender-ref ref="FILE"/></root>
+</configuration>

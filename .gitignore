@@ -1,0 +1,17 @@
+target/
+.mvn/repository/
+release/*
+!release/.gitkeep
+.smoke/
+.idea/
+*.iml
+*.log
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.hprof
+*.jfr
+.env
+.env.*
+!.env.example

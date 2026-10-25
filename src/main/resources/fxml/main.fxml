@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import com.enro.ui.BrandMark?>
+<BorderPane xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.enro.ui.MainController" fx:id="shell" minHeight="0" minWidth="0" styleClass="app-shell">
+ <left><VBox prefWidth="222" minWidth="222" maxWidth="222" minHeight="0" styleClass="sidebar" spacing="18">
+  <HBox alignment="CENTER_LEFT" spacing="11" styleClass="brand"><BrandMark/><Label text="Enro" styleClass="brand-name"/><Region HBox.hgrow="ALWAYS"/><Label text="2.0" styleClass="version-tag"/></HBox>
+  <ScrollPane fitToWidth="true" hbarPolicy="NEVER" vbarPolicy="AS_NEEDED" minHeight="0" styleClass="nav-scroll" VBox.vgrow="ALWAYS"><content><VBox fx:id="navigation" spacing="5"/></content></ScrollPane>
+  <VBox fx:id="bottomNavigation" spacing="5"/>
+  <HBox spacing="7" alignment="CENTER_LEFT" styleClass="sidebar-footer"><Label text="●" styleClass="local-dot"/><Label fx:id="localLabel" styleClass="small-muted"/></HBox>
+ </VBox></left>
+ <center><VBox minHeight="0">
+  <HBox styleClass="topbar" alignment="CENTER_LEFT" spacing="9"><Label text="Enro" styleClass="breadcrumb-brand"/><Label text="/" styleClass="breadcrumb-divider"/><Label fx:id="breadcrumb" styleClass="breadcrumb-current"/><Region HBox.hgrow="ALWAYS"/><Button fx:id="helpButton" onAction="#help" styleClass="quiet"/><Button fx:id="languageButton" onAction="#toggleLanguage" styleClass="quiet"/><Button fx:id="refreshButton" onAction="#refresh" styleClass="icon-button"/></HBox>
+  <VBox styleClass="workspace" spacing="20" minHeight="0" VBox.vgrow="ALWAYS">
+   <HBox alignment="CENTER_LEFT" spacing="24"><VBox spacing="6" HBox.hgrow="ALWAYS"><Label fx:id="title" styleClass="page-title"/><Label fx:id="subtitle" styleClass="page-subtitle" wrapText="true"/></VBox><Button fx:id="mainAction" onAction="#primaryAction" styleClass="primary"/></HBox>
+   <HBox fx:id="pathbar" alignment="CENTER_LEFT" spacing="8" styleClass="pathbar"><Label text="⌕" styleClass="path-icon"/><TextField fx:id="pathField" HBox.hgrow="ALWAYS"/><Button fx:id="browseButton" onAction="#browse" styleClass="quiet"/><Button fx:id="scanButton" onAction="#scan" styleClass="secondary"/></HBox>
+   <StackPane fx:id="content" minHeight="0" VBox.vgrow="ALWAYS"/>
+  </VBox>
+  <HBox styleClass="statusbar" alignment="CENTER_LEFT" spacing="10"><ProgressIndicator fx:id="progress" visible="false" managed="false" prefWidth="15" prefHeight="15"/><Label fx:id="status" styleClass="small-muted" HBox.hgrow="ALWAYS" maxWidth="Infinity"/><Button fx:id="cancelButton" onAction="#cancel" styleClass="quiet" visible="false" managed="false"/></HBox>
+ </VBox></center>
+</BorderPane>

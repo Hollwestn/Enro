@@ -1,0 +1,7 @@
+{
+  "java" : "25.0.3",
+  "os" : "Windows 11",
+  "javafxModule" : "javafx.controls@25.0.2",
+  "status" : "PASS",
+  "passed" : [ "JDK25", "JavaFX named modules", "FXML/CSS/icon resources", "NIO/SQLite/JNA Windows File ID", "Sample/SHA-256/byte comparison", "Jackson/atomic settings", "Journaled move/undo" ]
+}
